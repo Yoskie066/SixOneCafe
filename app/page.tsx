@@ -1,9 +1,18 @@
 
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Menu from "./components/Menu";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold text-blue-600 underline">
-      Hello world!
-    </h1>
+    <>
+      <Hero />
+      <About />
+      <Menu />
+      <Testimonials />
+      <Contact />
+    </>
   );
 }
