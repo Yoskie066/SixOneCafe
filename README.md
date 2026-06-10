@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☕ SixOneCafe Landing Page
 
-## Getting Started
+A modern and mobile-responsive landing page developed for **SixOneCafe**. The website is designed to introduce visitors to the café, showcase its menu offerings, highlight customer experiences, and provide easy access to contact information.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🏠 Home
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Home section serves as the main landing area of the website, featuring a welcoming hero section, engaging headline, and call-to-action buttons that introduce visitors to SixOneCafe.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📖 About
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The About section provides information about SixOneCafe, its story, values, and commitment to serving premium coffee, delicious food, and creating a warm and comfortable environment for customers.
 
-## Learn More
+### 🍽️ Menu
 
-To learn more about Next.js, take a look at the following resources:
+The Menu section showcases a variety of food and beverage offerings available at SixOneCafe, allowing customers to explore the café’s selections before visiting.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🖼️ Gallery
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The Gallery section displays images of the café, food, beverages, and overall ambiance, providing visitors with a visual representation of the SixOneCafe experience.
 
-## Deploy on Vercel
+### ⭐ Testimonials
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The Testimonials section features feedback and reviews from customers, helping establish trust and credibility through real customer experiences.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📞 Contact Us
+
+The Contact Us section provides visitors with important information for reaching and connecting with SixOneCafe.
+
+**Address:**
+121 Zulueta St., Brgy. 61-A, San Roque, Cavite, Philippines, 4100
+
+**Phone Number:**
+0927 646 2759
+
+**Facebook Page:**
+Six.One Cafe
+
+**Instagram:**
+@six.onecafe
+
+## 📱 Mobile Responsive Design
+
+The website is fully responsive and optimized for different screen sizes, ensuring a seamless user experience across:
+
+* Desktop Computers
+* Laptops
+* Tablets
+* Mobile Devices
+
+The responsive design allows users to easily navigate the website and access information regardless of the device they are using.
+
+## 🛠️ Technologies Used
+
+* Next.js
+* React.js
+* TypeScript
+* Tailwind CSS
+
+## 🎯 Project Objective
+
+The primary objective of this project is to establish a professional online presence for SixOneCafe by providing customers with easy access to information about the café, its menu offerings, customer testimonials, gallery, and contact details through a modern and user-friendly web interface.
+

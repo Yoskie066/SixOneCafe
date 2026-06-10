@@ -9,6 +9,7 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#menu", label: "Menu" },
+  { href: "#gallery", label: "Gallery" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
@@ -18,9 +19,8 @@ export default function Navbar() {
   const router = useRouter();
 
   const handleLogoClick = () => {
-    // Palitan ang URL sa root (walang hash)
+
     router.push("/");
-    // Mag‑scroll sa home section
     const homeSection = document.getElementById("home");
     if (homeSection) {
       homeSection.scrollIntoView({ behavior: "smooth" });
@@ -32,7 +32,6 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-black text-white shadow-md shadow-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo - clickable na walang hash */}
           <div className="flex flex-col">
             <button
               onClick={handleLogoClick}
@@ -60,7 +59,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             onClick={() => setIsOpen((open) => !open)}

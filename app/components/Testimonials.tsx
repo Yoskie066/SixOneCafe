@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -45,7 +44,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="bg-white text-stone-900 py-20 sm:py-28 lg:py-32">
+    <section id="testimonials" className="bg-black text-white py-20 sm:py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12"
@@ -57,8 +56,8 @@ export default function Testimonials() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
             Testimonials
           </h2>
-          <div className="w-20 h-0.5 bg-stone-900 mx-auto mt-4" />
-          <p className="mt-4 text-stone-600 max-w-2xl mx-auto">
+          <div className="w-20 h-0.5 bg-white mx-auto mt-4" />
+          <p className="mt-4 text-white/70 max-w-2xl mx-auto">
             Real experiences from our beloved customers
           </p>
         </motion.div>
@@ -73,7 +72,7 @@ export default function Testimonials() {
           {testimonials.map((t, idx) => (
             <motion.div
               key={idx}
-              className="border border-stone-200 rounded-2xl p-6 bg-stone-50 hover:shadow-lg hover:border-stone-300 transition-all duration-300"
+              className="border border-white/20 rounded-2xl p-6 bg-white/10 backdrop-blur-sm hover:shadow-lg hover:border-white/40 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
@@ -84,15 +83,17 @@ export default function Testimonials() {
                   <Star
                     key={i}
                     className={`w-4 h-4 ${
-                      i < t.rating ? "fill-stone-900 text-stone-900" : "text-stone-300"
+                      i < t.rating
+                        ? "fill-yellow-500 text-yellow-500"
+                        : "text-white/30"
                     }`}
                   />
                 ))}
               </div>
-              <p className="text-stone-700 leading-relaxed mb-4 italic">“{t.text}”</p>
+              <p className="text-white/80 leading-relaxed mb-4 italic">“{t.text}”</p>
               <div>
-                <p className="font-bold text-stone-900">{t.name}</p>
-                <p className="text-sm text-stone-500">{t.role}</p>
+                <p className="font-bold text-white">{t.name}</p>
+                <p className="text-sm text-white/50">{t.role}</p>
               </div>
             </motion.div>
           ))}
