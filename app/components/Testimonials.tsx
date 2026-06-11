@@ -44,7 +44,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="bg-black text-white py-20 sm:py-28 lg:py-32">
+    <section id="testimonials" className="bg-black text-amber-50 py-20 sm:py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12"
@@ -54,10 +54,11 @@ export default function Testimonials() {
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
-            Testimonials
+            <span className="text-amber-600">Testimonials</span>
           </h2>
-          <div className="w-20 h-0.5 bg-white mx-auto mt-4" />
-          <p className="mt-4 text-white/70 max-w-2xl mx-auto">
+          {/* ORANGE NA GUHIT */}
+          <div className="w-20 h-0.5 bg-amber-600 mx-auto mt-4" />
+          <p className="mt-4 text-amber-100/80 max-w-2xl mx-auto">
             Real experiences from our beloved customers
           </p>
         </motion.div>
@@ -72,7 +73,7 @@ export default function Testimonials() {
           {testimonials.map((t, idx) => (
             <motion.div
               key={idx}
-              className="border border-white/20 rounded-2xl p-6 bg-white/10 backdrop-blur-sm hover:shadow-lg hover:border-white/40 transition-all duration-300"
+              className="bg-black/80 backdrop-blur-sm border border-amber-800/40 rounded-2xl p-6 hover:border-amber-600/60 hover:shadow-lg hover:shadow-amber-900/20 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
@@ -84,16 +85,18 @@ export default function Testimonials() {
                     key={i}
                     className={`w-4 h-4 ${
                       i < t.rating
-                        ? "fill-yellow-500 text-yellow-500"
-                        : "text-white/30"
+                        ? "fill-amber-500 text-amber-500"
+                        : "text-amber-800/40"
                     }`}
                   />
                 ))}
               </div>
-              <p className="text-white/80 leading-relaxed mb-4 italic">“{t.text}”</p>
+              <p className="text-amber-100/80 leading-relaxed mb-4 italic">
+                “{t.text}”
+              </p>
               <div>
-                <p className="font-bold text-white">{t.name}</p>
-                <p className="text-sm text-white/50">{t.role}</p>
+                <p className="font-bold text-amber-50">{t.name}</p>
+                <p className="text-sm text-amber-400/60">{t.role}</p>
               </div>
             </motion.div>
           ))}

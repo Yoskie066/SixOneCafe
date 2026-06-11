@@ -9,7 +9,6 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#menu", label: "Menu" },
-  { href: "#gallery", label: "Gallery" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
@@ -19,7 +18,6 @@ export default function Navbar() {
   const router = useRouter();
 
   const handleLogoClick = () => {
-
     router.push("/");
     const homeSection = document.getElementById("home");
     if (homeSection) {
@@ -29,29 +27,24 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-black text-white shadow-md shadow-white/5">
+    <nav className="sticky top-0 z-50 bg-black shadow-md shadow-amber-900/20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex flex-col">
-            <button
-              onClick={handleLogoClick}
-              className="group flex items-center"
-            >
-              <div className="transition-transform duration-200 group-hover:scale-105">
-                <span className="text-2xl font-black tracking-tight text-white">
-                  SixOneCafe
-                </span>
-              </div>
-            </button>
-          </div>
+          <button
+            onClick={handleLogoClick}
+            className="transition-transform duration-200 hover:scale-105"
+          >
+            <span className="text-2xl font-black tracking-tight text-amber-600">
+              SixOneCafe
+            </span>
+          </button>
 
-          {/* Desktop Navigation */}
           <div className="hidden items-center gap-2 md:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-white/80 transition-all duration-300 hover:bg-white/10 hover:text-white"
+                className="rounded-full px-4 py-2 text-sm font-semibold text-amber-50 transition-all duration-300 hover:scale-105 hover:bg-amber-700 hover:text-amber-50 active:scale-95"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
@@ -62,22 +55,21 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setIsOpen((open) => !open)}
-            className="inline-flex h-10 w-10 items-center justify-center text-white transition hover:text-white/70 md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center text-amber-50 transition hover:text-amber-600 md:hidden"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="py-4 md:hidden">
-            <div className="space-y-2 rounded-2xl bg-black/95 p-2 shadow-xl shadow-white/10 backdrop-blur-sm">
+            <div className="space-y-2 rounded-2xl bg-black p-2 shadow-xl shadow-amber-900/20">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block rounded-xl px-4 py-3 text-sm font-medium text-white/80 transition-all duration-300 hover:bg-white/10 hover:text-white"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-amber-50 transition-all duration-300 hover:scale-105 hover:bg-amber-700 hover:text-amber-50 active:scale-95"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

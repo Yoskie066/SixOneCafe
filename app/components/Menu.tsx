@@ -1,4 +1,3 @@
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -115,7 +114,7 @@ export default function Menu() {
   ];
 
   return (
-    <section id="menu" className="bg-black text-white py-20 sm:py-28 lg:py-32">
+    <section id="menu" className="bg-black text-amber-50 py-20 sm:py-28 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12"
@@ -125,10 +124,11 @@ export default function Menu() {
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
-            Our Menu
+            Our <span className="text-amber-600">Menu</span>
           </h2>
-          <div className="w-20 h-0.5 bg-white mx-auto mt-4" />
-          <p className="mt-4 text-white/70 max-w-2xl mx-auto">
+          {/* ORANGE NA GUHIT – HINDI TATANGGALIN */}
+          <div className="w-20 h-0.5 bg-amber-600 mx-auto mt-4" />
+          <p className="mt-4 text-amber-100/80 max-w-2xl mx-auto">
             Handcrafted coffee, signature drinks, and delightful refreshments
           </p>
         </motion.div>
@@ -143,24 +143,26 @@ export default function Menu() {
           {categories.map((cat, idx) => (
             <motion.div
               key={idx}
-              className="border border-white/10 rounded-2xl p-5 md:p-6 bg-white/5 backdrop-blur-sm hover:border-white/30 hover:bg-white/10 transition-all duration-300"
+              className="bg-black/80 backdrop-blur-sm border border-amber-800/40 rounded-2xl p-5 md:p-6 hover:border-amber-600/60 hover:shadow-lg hover:shadow-amber-900/20 transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-3 mb-5 pb-2 border-b border-white/20">
-                <div className="p-2 bg-white/10 rounded-full text-white/80 transition">
+              <div className="flex items-center gap-3 mb-5 pb-2">
+                <div className="p-2 bg-amber-900/30 rounded-full text-amber-500 transition">
                   {cat.icon}
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold">{cat.title}</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-amber-100">
+                  {cat.title}
+                </h3>
               </div>
 
               {cat.type === "table" ? (
                 <div className="overflow-x-auto">
-                  <table className="w-full text-sm sm:text-base">
+                  <table className="w-full text-sm sm:text-base border-collapse">
                     <thead>
-                      <tr className="border-b border-white/20 text-white/60">
+                      <tr>
                         {cat.headers?.map((h, i) => (
                           <th key={i} className="text-left py-2 font-semibold first:pl-0">
                             {h}
@@ -171,13 +173,10 @@ export default function Menu() {
                     <tbody>
                       {(cat.items as { name: string; hot: string; iced: string }[]).map(
                         (item, i) => (
-                          <tr
-                            key={i}
-                            className="border-b border-white/10 hover:bg-white/5 transition-colors"
-                          >
-                            <td className="py-2 font-medium">{item.name}</td>
-                            <td className="py-2">{item.hot}</td>
-                            <td className="py-2">{item.iced}</td>
+                          <tr key={i} className="hover:bg-amber-900/10 transition-colors">
+                            <td className="py-2 font-medium text-amber-100">{item.name}</td>
+                            <td className="py-2 text-amber-300">{item.hot}</td>
+                            <td className="py-2 text-amber-300">{item.iced}</td>
                           </tr>
                         )
                       )}
@@ -193,10 +192,10 @@ export default function Menu() {
                     return (
                       <div
                         key={i}
-                        className="flex justify-between items-center border-b border-white/10 py-2 text-white/80 hover:text-white hover:border-white/30 transition-all duration-200"
+                        className="flex justify-between items-center py-2 text-amber-100/80 hover:text-amber-100 transition-all duration-200"
                       >
                         <span className="text-sm">{name}</span>
-                        <span className="text-sm font-semibold text-white/90 ml-2">
+                        <span className="text-sm font-semibold text-amber-400 ml-2">
                           {price}
                         </span>
                       </div>
