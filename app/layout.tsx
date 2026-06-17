@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "SixOneCafe",
   description: "Premium coffee, delicious food, and a cozy atmosphere.",
   icons: {
-    icon: "/LOGO_CAFE.png", 
+    icon: "/logo-v2.png", 
   },
 };
 
