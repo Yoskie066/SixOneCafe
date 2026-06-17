@@ -56,7 +56,7 @@ export default function Testimonials() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
             <span className="text-amber-600">Testimonials</span>
           </h2>
-          {/* ORANGE NA GUHIT */}
+      
           <div className="w-20 h-0.5 bg-amber-600 mx-auto mt-4" />
           <p className="mt-4 text-amber-100/80 max-w-2xl mx-auto">
             Real experiences from our beloved customers

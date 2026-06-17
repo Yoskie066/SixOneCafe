@@ -16,9 +16,6 @@ The About section provides information about SixOneCafe, its story, values, and 
 
 The Menu section showcases a variety of food and beverage offerings available at SixOneCafe, allowing customers to explore the café’s selections before visiting.
 
-### 🖼️ Gallery
-
-The Gallery section displays images of the café, food, beverages, and overall ambiance, providing visitors with a visual representation of the SixOneCafe experience.
 
 ### ⭐ Testimonials
 
@@ -31,8 +28,6 @@ The Contact Us section provides visitors with important information for reaching
 **Address:**
 121 Zulueta St., Brgy. 61-A, San Roque, Cavite, Philippines, 4100
 
-**Phone Number:**
-0927 646 2759
 
 **Facebook Page:**
 Six.One Cafe

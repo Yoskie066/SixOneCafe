@@ -17,7 +17,6 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
             Get in <span className="text-amber-600">Touch</span>
           </h2>
-          {/* ORANGE NA GUHIT */}
           <div className="w-20 h-0.5 bg-amber-600 mx-auto mt-4" />
           <p className="mt-4 text-amber-100/80 max-w-2xl mx-auto">
             Visit us, send a message, or follow us online
@@ -64,7 +63,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="block text-amber-100/80 hover:text-amber-300 underline transition"
                     >
-                      facebook.com/six.one.cafe
+                      Facebook: Six.One Cafe
                     </a>
                     <a
                       href="https://www.instagram.com/six.onecafe"
@@ -72,7 +71,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="block text-amber-100/80 hover:text-amber-300 underline transition"
                     >
-                      instagram.com/six.onecafe
+                      Instagram: six.onecafe
                     </a>
                   </div>
                 </div>

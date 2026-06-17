@@ -8,12 +8,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-2">
           <p className="text-amber-100/70 text-sm sm:text-base font-medium">
-            © {currentYear} SixOneCafe
-          </p>
-          <p className="text-amber-400/60 text-xs sm:text-sm">
             Unofficial Website • For Portfolio Purposes Only
           </p>
-          <p className="text-amber-400/60 text-xs sm:text-sm">
+          <p className="text-amber-500 text-sm sm:text-base font-medium">
             Not affiliated with or endorsed by SixOneCafe.
           </p>
         </div>

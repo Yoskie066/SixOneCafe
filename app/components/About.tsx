@@ -34,16 +34,16 @@ export default function About() {
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
-            About <span className="text-amber-600">SixOneCafe</span>
+            About <span className="text-amber-600">Us</span>
           </h2>
-          {/* ORANGE NA GUHIT – ITO YUNG HINDI TATANGGALIN */}
+
           <div className="w-20 h-0.5 bg-amber-600 mx-auto mt-4 mb-8" />
 
           <div className="bg-black/80 backdrop-blur-sm border rounded-2xl p-6 sm:p-8 lg:p-10 shadow-xl glowing-border">
             <div className="space-y-6 text-amber-100/80 leading-relaxed text-base sm:text-lg">
               <p>
                 SixOne Cafe began as a dream shared by friends who wanted to bring
-                genuine, handcrafted coffee to the heart of Cavite. Our space is
+                genuine, handcrafted coffee to the heart of our community. Our space is
                 more than just a cafe — it's a gathering place for those who
                 appreciate quiet mornings, good conversations, and excellent
                 brews.

@@ -126,7 +126,7 @@ export default function Menu() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight">
             Our <span className="text-amber-600">Menu</span>
           </h2>
-          {/* ORANGE NA GUHIT – HINDI TATANGGALIN */}
+
           <div className="w-20 h-0.5 bg-amber-600 mx-auto mt-4" />
           <p className="mt-4 text-amber-100/80 max-w-2xl mx-auto">
             Handcrafted coffee, signature drinks, and delightful refreshments
